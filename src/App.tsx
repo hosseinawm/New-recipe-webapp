@@ -3,6 +3,7 @@ import { useState } from "react";
 //components
 import Navbar from "./components/Navbar";
 import MobileMenu from "./components/MobileMenu";
+import Hero from "./components/Hero";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ function App() {
         }`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Hero />
       </div>
     </>
   );

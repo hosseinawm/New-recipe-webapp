@@ -7,12 +7,12 @@ import type { MobileMenuProps } from "@/types/navbar";
 const Navbar = ({ menuOpen, setMenuOpen }: MobileMenuProps) => {
   return (
     <nav
-      className="bg-white shadow-md text-gray-700  dark:bg-slate-800 dark:shadow-none dark:text-gray-300 
-    sticky h-16 w-full z-50 flex items-center justify-between"
+      className="bg-gray-200 shadow-md text-gray-800 dark:bg-slate-700 dark:shadow-none dark:text-white 
+    fixed h-16 w-full z-50 flex items-center justify-between"
     >
-      <div className="flex flex-1 w-60 items-center gap-2 font-bold text-xl sm:text-2xl md:text-3xl ml-6 md:ml-10 bg-gradient-to hover:cursor-pointer hover:text-orange-600 hover:dark:text-orange-400">
+      <div className="flex flex-1 w-60 items-center gap-2 font-bold text-xl sm:text-2xl md:text-3xl ml-6 md:ml-10 bg-gradient-to  hover:text-orange-600 hover:dark:text-orange-400">
         <CookingPot />
-        <h1 className="flex w-60 bg-gradient-to-r from-gray-700 to-orange-600 dark:from-gray-300 dark:to-orange-400 bg-clip-text text-transparent">
+        <h1 className="flex w-60 bg-gradient-to-r from-gray-700 to-orange-600 dark:from-gray-300 dark:to-orange-400 bg-clip-text text-transparent hover:cursor-pointer">
           Recipe App
         </h1>
       </div>
